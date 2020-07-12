@@ -1,0 +1,21 @@
+{
+  "name": "Make Medium Awesome",
+  "version": "1.0",
+  "description": "Make Medium.com reading uninterrupted and awesome again.",
+  "manifest_version": 2,
+  "icons": {
+    "128": "icons/medium-128.png"
+  },
+  "permissions": [
+    "cookies",
+    "https://medium.com/*",
+    "https://*.medium.com/*"
+  ],
+  "browser_action": {},
+  "background": {
+    "scripts": [
+      "backgroundCookieRemover.js"
+    ],
+    "persistent": false
+  }
+}
